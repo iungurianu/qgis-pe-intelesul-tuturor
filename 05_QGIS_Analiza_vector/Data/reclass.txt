@@ -1,0 +1,4 @@
+0 thru 5 = 0 0-5 grade
+5.1 thru 10 = 5 5-10 grade
+10.1 thru 15 = 10 10-15 grade
+15.1 thru 40 = 15 >15 grade
