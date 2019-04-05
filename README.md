@@ -17,6 +17,7 @@
 
 ## Public țintă
 Acest curs este destinat tuturor celor interesați, indiferent de nivelul de experiență!
+[Rezervă-ți un loc!](www.gistm.ro)
 
 ## Software
 QGIS 3.4 LTR. Download [aici](www.qgis.com).
@@ -27,6 +28,6 @@ Un proiect al **Comunitații GIS din Timișoara** în parteneriat cu **Departame
 Pentru mai multe detalii vizitați [www.gistm.ro](www.gistm.ro).
 
 ![gistm](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/Logo/GISTM_logo_100px.png)
-   ![geografie](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/Logo/dep_geogra_60px.png)
+![geografie](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/Logo/dep_geogra_60px.png)
 
 Licență [cc-by-sa-4.0](https://creativecommons.org)
