@@ -22,7 +22,7 @@ Acest curs este destinat tuturor celor interesați, indiferent de nivelul de exp
 ## Software
 QGIS 3.4 LTR. Download [aici](www.qgis.com).
 
-##Locație
+## Locație
 Departamentul de Geografie
 
 ##
