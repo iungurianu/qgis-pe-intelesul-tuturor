@@ -11,7 +11,7 @@ Curs *în clasă* de promovare a soluțiilor GIS open-source.
 * Stilizare și etichetare
 * Layout
 
-## Structura cursului
+## Structura sesiunilor
 * Partea 1 - 30 de minute - *Noțiuni teoretice*
 * **Pauză**
 * Partea 2 - 30 de minute - *Hands on*
