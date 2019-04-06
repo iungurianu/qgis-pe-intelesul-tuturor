@@ -23,7 +23,10 @@ Acest curs este destinat tuturor celor interesați, indiferent de nivelul de exp
 QGIS 3.4 LTR. Download [aici](www.qgis.com).
 
 ## Locație
-Departamentul de Geografie
+Departamentul de Geografie, bvd. Vasile Pârvan, nr. 4
+
+## Cum să folosiți aceste materiale
+Fiecare curs are un fișier `readme.md` unde sunt menționate obiectivele fiecărui curs și instrucțiunile necesare pentru a parcurge cu succes exercițiile.
 
 ##
 Un proiect al **Comunitații GIS din Timișoara** în parteneriat cu **Departamentul de Geografie** al Universității de Vest, Timișoara.
