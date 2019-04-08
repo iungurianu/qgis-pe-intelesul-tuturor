@@ -27,7 +27,18 @@ QGIS 3.4 LTR. Download [aici](www.qgis.com).
 Departamentul de Geografie, bvd. Vasile Pârvan, nr. 4
 
 ## Cum să folosiți aceste materiale
-Fiecare sesiune are un fișier `readme.md` unde sunt menționate obiectivele fiecărei sesiuni și instrucțiunile necesare pentru a parcurge cu succes exercițiile.
+### Structura fișierelor
+* Data:
+  * Conține toate datele care vor fi folosite la exerciții;
+* Handbook:
+  * Conține un *transcript* al slide-urilor;
+* Resurse:
+  * Conține toate elementele grafice folosite;
+* Slides:
+  * Keynote - Slide-uri compatibile cu Keynote for Mac;
+  * Power Point - Slide-uri compatibile cu Power Point;
+  * PDF - Slide-uri în format *.pdf.
+> Fiecare sesiune are un fișier `readme.md` unde sunt menționate obiectivele fiecărei sesiuni și instrucțiunile necesare pentru a parcurge cu succes exercițiile.
 
 ##
 Un proiect al **Comunitații GIS din Timișoara** în parteneriat cu **Departamentul de Geografie** al Universității de Vest, Timișoara.
