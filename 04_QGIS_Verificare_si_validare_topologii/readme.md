@@ -23,13 +23,13 @@
 > Această regulă se va asigura că nu sunt puncte suprapuse, cu alte cuvinte o stație de autobuz situată peste o alta.
 3. Click pe Add Rule;
 4. Click OK;
-5. În panoul Topology Checker, click Validate All;
+5. În panoul Topology Checker, executați click pe Validate All;
 > Puteți alege să dați Zoom pe o zonă specifică și să validați topologia doar pentru aceasta zonă executând click pe Validate Extent.
 6. Examinați rezultatul.
 > Erorile de topologie sunt marcate cu roșu pe hartă.
 
 ##### Verificarea integrității layer-ului Bus_routes
-1. În panoul Topology Checker executați click pe Configure;
+1. În panoul Topology Checker, executați click pe Configure;
 2. Selectați și ștergeți regulile topologice pentru Bus_stops;
 3. Creați o nouă regulă pentru Bus_lines folosind `must not have dangles`;
 > Această regulă identifică toate punctele de end a unei *dangling line*;
@@ -41,7 +41,7 @@
 **Nu uitați să salvați proiectul!**
 
 ##### Verificarea integrității layer-ului parcels
-1. În panoul Topology Checker executați click pe Configure;
+1. În panoul Topology Checker, executați click pe Configure;
 2. Selectați și ștergeți orice regulă existentă;
 3. Alegeți 3 reguli: `must not have gaps`, `must not overlap` și `must not have duplicates`;
 4. Click OK;
