@@ -1,4 +1,7 @@
 ![logo](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/04_QGIS_Verificare_si_validare_topologii/verificare_topologii_logo.png)
+## Scenariu
+**Lucrați ca analist GIS pentru orașul Albuquerque, New Mexico, iar sacina dvs. este să verificați și să validați un set de date înainte de a fi publicat pe geo-portalul orașului.**
+
 ## Obiective
 * Verificarea calității datelor vector cu ajutorul regulilor topologice
 
@@ -12,8 +15,9 @@
 3. Din bara de meniu, alegeți Plugins -> Manage and Install Plugins;
 4. Selectați tab-ul Installed și activați plugin-ul **Topology Checker**;
 5. Click Vector -> Topology Checker pentru a deschide panoul Topology Checker;
-
-#### Investigarea integrității layer-ului Bus_stops
+### Verificarea integrității datelor
+****
+##### Verificarea integrității layer-ului Bus_stops
 1. Click Configure pentru a deschide fereastra Topology Rules Settings. Aici puteți defini a varietate de reguli topologice.
 2. Sub *Current Rules* selectați layer-ul Bus_stops. Executați click pe cea de-a doua căsuța pentru a vedea ce reguli sunt disponibile pentru layere de tip punct. Alegeți `must not have duplicates`;
 > această regulă se va asigura că nu sunt puncte suprapuse, cu alte cuvinte o stație de autobuz situată peste o alta.
@@ -24,7 +28,7 @@
 6. Examinați rezultatul.
 > Erorile de topologie sunt marcate cu roșu pe hartă.
 
-#### Investigarea integrității layer-ului Bus_routes
+##### Verificarea integrității layer-ului Bus_routes
 1. În panoul Topology Checker executați click pe Configure;
 2. Selectați și ștergeți regulile topologice pentru Bus_stops;
 3. Creați o nouă regulă pentru Bus_lines folosind `must not have dangles`;
@@ -36,3 +40,12 @@
 
 **Nu uitați să salvați proiectul!**
 
+##### Verificarea integrității layer-ului parcels
+1. În panoul Topology Checker executați click pe Configure;
+2. Selectați și ștergeți orice regulă existentă;
+3. Alegeți 3 reguli: `must not have gaps`, `must not overlap` și `must not have duplicates`;
+4. Click OK;
+5. În panoul Topology Checker, executați click pe Validate All.
+6. Examinați rezultatul
+### Rezolvarea erorilor de topologie
+****
