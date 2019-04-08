@@ -1,6 +1,6 @@
 ![logo](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/04_QGIS_Verificare_si_validare_topologii/verificare_topologii_logo.png)
 ## Scenariu
-**Lucrați ca analist GIS pentru orașul Albuquerque, New Mexico, iar sacina dvs. este să verificați și să validați un set de date înainte de a fi publicat pe geo-portalul orașului.**
+**Lucrați ca analist GIS pentru orașul Albuquerque, New Mexico, iar sarcina dvs. este să verificați și să validați un set de date înainte de a fi publicat pe geo-portalul orașului.**
 
 ## Obiective
 * Verificarea calității datelor vector cu ajutorul regulilor topologice
@@ -20,7 +20,7 @@
 ##### Verificarea integrității layer-ului Bus_stops
 1. Click Configure pentru a deschide fereastra Topology Rules Settings. Aici puteți defini a varietate de reguli topologice.
 2. Sub *Current Rules* selectați layer-ul Bus_stops. Executați click pe cea de-a doua căsuța pentru a vedea ce reguli sunt disponibile pentru layere de tip punct. Alegeți `must not have duplicates`;
-> această regulă se va asigura că nu sunt puncte suprapuse, cu alte cuvinte o stație de autobuz situată peste o alta.
+> Această regulă se va asigura că nu sunt puncte suprapuse, cu alte cuvinte o stație de autobuz situată peste o alta.
 3. Click pe Add Rule;
 4. Click OK;
 5. În panoul Topology Checker, click Validate All;
