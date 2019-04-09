@@ -48,7 +48,7 @@
 5. În panoul *Topology Checker*, executați click pe *Validate All*.
 6. Examinați rezultatul
 
-:exclamation:Este timpul pentru o :beer: sau o :coffee:. Luați o pauză de 5 minute
+## :exclamation:Este timpul pentru o :beer: sau o :coffee:. Luați o pauză de 5 minute
 
 ### Rezolvarea erorilor de topologie
 ****
@@ -114,7 +114,8 @@ La final, nu uitați să salvați modificările făcute!
 
 > Utilizarea algoritmului **v.clean** din suita Grass poate rezolva în mod automat o serie de erori topologice. Mai multe detalii [aici](https://grass.osgeo.org/grass77/manuals/v.clean.html)
 
-:+1:
+**Ați finalizat cu succes sesiunea de Verificare și validare topologii** :+1:. 
+Mergeți la următoarea [sesiune](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/tree/master/05_QGIS_Analiza_vector)
 
 
  
