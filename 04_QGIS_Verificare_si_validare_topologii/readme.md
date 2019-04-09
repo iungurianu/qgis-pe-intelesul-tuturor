@@ -48,7 +48,7 @@
 5. În panoul *Topology Checker*, executați click pe *Validate All*.
 6. Examinați rezultatul
 
-## :exclamation:Este timpul pentru o :beer: sau o :coffee:. Luați o pauză de 5 minute
+## :exclamation:Este timpul pentru o :beer: sau o :coffee:. Luați o pauză de 5 minute!
 
 ### Rezolvarea erorilor de topologie
 ****
