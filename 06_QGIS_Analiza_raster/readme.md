@@ -1,7 +1,7 @@
 ![analiza raster](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/06_QGIS_Analiza_raster/Resurse/Img/qgis_analiza_raster_50px.png)
 
 ## Scenariu
-**O noua acțiune de impădurire cu *Picea Abies (Molid)* va avea loc în [Parcul Național Retezat](www.retezat.ro), iar sarcina dvs. ca analist GIS este să identificați locațiile optime pentru această acțiune.**
+**O noua acțiune de împădurire cu *Picea Abies (Molid)* va avea loc în [Parcul Național Retezat](www.retezat.ro), iar sarcina dvs. ca analist GIS este să identificați locațiile optime pentru această acțiune.**
 
 ### Criterii
 1. Spațiul pentru plantare trebuie să fie o pajiște;
