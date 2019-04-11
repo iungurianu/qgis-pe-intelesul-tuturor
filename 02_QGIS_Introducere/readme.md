@@ -23,4 +23,15 @@
 ### Cunoașterea interfeței QGIS
 
 ![Interfata QGIS](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/qgis_interfata_01.png)
+
+1. **Bara de meniu**
+2. **Toolbar**
+3. **Browser Panel**
+4. **Layers Panel**
+5. **Map Canvas**
+6. **Status Bar**
+7. **Search Bar**
+
+#### Adăugarea unui fișier vector
+![Adaugarea unui fisier vector](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/qgis_add_vector_layer.png)
  
