@@ -7,7 +7,7 @@
 ## Let's jump right in
 
 ### Download și instalare QGIS
-1. Deschideți browser-ul dvs. de internet și în bara de adrese introduceți [www.qgis.com](www.qgis.com).
+1. Click [aici](www.qgis.com) .
 2. Executați click pe butonul **Download Now**;
 3. Descărcați versiunea potrivită pentru sistemul dvs. de operare. Utilizatorii de Windows trebuie să aibă în vedere și versiunea sistemului de operare (32 sau 64 de biți).
 > QGIS vă oferă posibilitatea să descărcați 2 versiuni:
