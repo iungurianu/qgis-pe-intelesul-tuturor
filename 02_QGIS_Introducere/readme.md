@@ -51,7 +51,7 @@
 13. ![show_bookmark](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/show_bookmark.png) - arată toate semnele existente;
 14. ![refresh](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/refresh.png) - redesenează harta.
 
-#### Instrumente explorare a datelor vector
+#### Instrumente de explorare a datelor vector
 1. **Instrumentul _Identifică_**
     * Executați click pe ![identifica](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/identify.png)
     * Executați click pe un obiect care aparține layer-ului selectat în *Layers Panels*
@@ -69,5 +69,7 @@
     > Pentru a selecta mai multe obiecte țineți tasta `shift` apăsată.
     > Numărul obiectelor selectate apare și în stânga jos, pe **Status Bar**, lângă **Search Bar**.
 5. **Selectarea unui obiect după atribute**
+     1. După o valoare;
+     2. După o expresie;
 6. **Deselectarea obiectelor selectate**
-
+    * Executați click pe ![deselectare](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/deselect.png)
