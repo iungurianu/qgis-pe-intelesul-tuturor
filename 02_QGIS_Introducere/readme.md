@@ -38,7 +38,7 @@
 #### Explorarea instrumentelor de vizualizare a hărții
 
 #### Exploararea layere-lor adăugate
-1. **Istrumentul _Identifică_**
+1. **Instrumentul _Identifică_**
 2. **Deschiderea tabelului de atribute**
 3. **Selectarea unui obiect din tabel**
 4. **Selectarea unui obiect din hartă**
