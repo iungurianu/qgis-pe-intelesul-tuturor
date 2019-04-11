@@ -11,8 +11,8 @@
 2. Executați click pe butonul **Download Now**;
 3. Descărcați versiunea potrivită pentru sistemul dvs. de operare. Utilizatorii de Windows trebuie să aibă în vedere și versiunea sistemului de operare (32 sau 64 de biți).
 > QGIS vă oferă posibilitatea să descărcați 2 versiuni:
-> * Versiunea cea mai recentă: *QGIS 3.6 - la momentul scrierii acestui document*;
-> * Versiunea cea mai stabilă: *QGIS 3.4 - la momentul scrierii acestui document*;
+> * Versiunea cea mai recentă: **QGIS 3.6** - *la momentul scrierii acestui document*;
+> * Versiunea cea mai stabilă: **QGIS 3.4** - *la momentul scrierii acestui document*;
 
 > Pentru utilizatorii avansați care folosesc platforma Windows, pentru instalare se poate alege și optiunea via **OSGeo4W Network Installer**. Este chiar indicat! Detalii [aici](https://qgis.ro/instaleaza-qgis-profesionist/).
 
