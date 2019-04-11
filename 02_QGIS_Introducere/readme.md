@@ -16,7 +16,7 @@
 
 > Pentru utilizatorii avansați care folosesc platforma Windows, pentru instalare se poate alege și optiunea via **OSGeo4W Network Installer**. Este chiar indicat! Detalii [aici](https://qgis.ro/instaleaza-qgis-profesionist/).
 
-> Pentru utilizatorii de Mac OS X, pentru instalare se poate folosi pachetul dezvoltat de ![Lutra Consulting](https://www.lutraconsulting.co.uk/). Îl puteți descărca de [aici](https://lutraconsulting.github.io/qgis-mac-packager/).
+> Pentru utilizatorii de Mac OS X, pentru instalare se poate folosi pachetul dezvoltat de [Lutra Consulting](https://www.lutraconsulting.co.uk/). Îl puteți descărca de [aici](https://lutraconsulting.github.io/qgis-mac-packager/).
 > Avantajul folosirii acestui pachet este că conține toate dependințele necesare sub forma unui *standalone installer*.
 
 
@@ -35,9 +35,12 @@
 #### Adăugarea unui fișier vector
 ![Adaugarea unui fisier vector](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/qgis_add_vector_layer.png)
 
-#### Explorarea instrumentelor de vizualizare a hărții
+#### Instrumente de navigare pe hartă
+1. ![pan_map](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/pan.png) - vă permite să navigați pe hartă ținând apăsat butonul stâng al mouse-ului și trăgând în același timp de hartă
+2. ![pan_map_to_selection](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/pan_map_to_selection.png) - mută harta în locația obiectele selectate fără a schimba nivelul de zoom
+3. ![]()
 
-#### Explorarea layere-lor adăugate
+#### Instrumente de interogare a atributelor datelor vector
 1. **Instrumentul _Identifică_**
 2. **Deschiderea tabelului de atribute**
 3. **Selectarea unui obiect din tabel**
