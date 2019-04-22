@@ -5,7 +5,7 @@ Curs *în clasă* de promovare a soluțiilor GIS open-source.
 * Introducere în GIS
 * Introducere în QGIS
 * Creare de date
-* Verificare și validare topologii
+* Evaluarea calității datelor
 * Analiză vector
 * Analiză raster
 * Stilizare și etichetare
