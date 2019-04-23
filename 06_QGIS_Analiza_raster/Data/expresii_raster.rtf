@@ -7,14 +7,31 @@
 \pard\pardeftab720\sl340\partightenfactor0
 
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 #reclasificare pante\
+#reclasificare altitudine\
+\pard\pardeftab720\sl340\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 \outl0\strokewidth0 \strokec2 ("srtm_retezat@1">=1200 and "srtm_retezat@1"<=1600)*1 + ("srtm_retezat@1"<1200 and "srtm_retezat@1">1600)*0
+\f1\fs24 \
+\pard\pardeftab720\sl340\partightenfactor0
+
+\f0 \cf2 \outl0\strokewidth0 \
+\
+#reclasificare pante\
 ("Slope@1">=10 and "Slope@1"<=50)*1+("Slope@1"<10 and "Slope@1">50)*0\
 \
-#reclasificare orientarea versantilor\
+#reclasificare orientarea versantilor - reclassify by table\
+MIN-Max-Value\
+0-70-1\
+70-290-0\
+290-360-1\
 \pard\pardeftab720\sl280\partightenfactor0
 
-\f1 \cf2 ("Aspect@1">70 and"Aspect@1"<290)*0 + ("Aspect@1"<=70 and "Aspect@1">=290)*1\
+\f1 \cf2 \
 \
+\
+x \cf2 \outl0\strokewidth0 \strokec2 22.60537277125086675\
+\cf2 \outl0\strokewidth0 y \cf2 \outl0\strokewidth0 \strokec2 30.27662318652852136\
+\cf2 \outl0\strokewidth0 \
 \pard\pardeftab720\sl340\partightenfactor0
 \cf2 \
 }
