@@ -62,11 +62,13 @@ Să folosim acum instrumentele de navigare:
 
 ## Activarea Toolbar-urilor
 Pentru a activa sau dezactiva **Toolbar-urile** în QGIS executați click-dreapta oriunde este un spațiu alb/nefolosit lângă celelalte toolbar-uri.
+
 ![Toolbars](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/toolbars.png)
 
 ## Familiarizarea cu Browser-ul
 **QGIS Browser** este o structură ierahică care vă permite să navigați către locații de pe calculatorul dvs. direct în QGIS.
 ![Browser](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/browser.png)
+
 Din **QGIS Browser** puteți aduce date folosind următoarele modalități:
 * Click-dreapta -> Add selected layer to canvas
 * Dublu-click pe layerul pe care doriți să îl adaugați
