@@ -69,3 +69,8 @@ Din **QGIS Browser** puteți aduce date folosind următoarele modalități:
 * Click-dreapta -> Add selected layer to canvas
 * Dublu-click pe layerul pe care doriți să îl adaugați
 * Drag-n-drop din **QGIS Browser** către **Map Canvas**
+
+
+## Explorați Sistemele de Coordonate
+1. Observați că în **Status Bar**, în colțul din stânga jos apare **EPSG:4326**. Sistemul de coordonate este modalitatea prin care QGIS transpune în plan suprafața globului. 
+## Salvați proiectul
