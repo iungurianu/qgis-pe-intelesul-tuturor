@@ -22,7 +22,9 @@
 
 ### Cunoașterea interfeței QGIS
 
-![Interfata QGIS](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_creare_de_date_interfata.pnge)
+Lansați aplicația QGIS.
+
+![Interfata QGIS](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_creare_de_date_interfata.png)
 
 1. **Bara de meniu**
 2. **Toolbar**
@@ -31,6 +33,13 @@
 5. **Map Canvas**
 6. **Status Bar**
 7. **Search Bar**
+
+În **status bar** în casuța de lângă *Coordinate* scrieți **World** și apăsați enter.
+![Coordinate](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_coordinate_world.png)
+În acest moment ați adăugat în QGIS primul dvs. layer, numit **World Map** (observați că layer-ul apare în *Layers Panels*).
+![World_Map](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_world_map.png)
+
+Să folosim acum instrumentele de navigare:
 
 #### Adăugarea unui fișier vector
 ![Adaugarea unui fisier vector](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/qgis_add_vector_layer.png)
@@ -51,25 +60,4 @@
 13. ![show_bookmark](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/show_bookmark.png) - arată toate semnele existente;
 14. ![refresh](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/refresh.png) - redesenează harta.
 
-#### Instrumente de explorare a datelor vector
-1. **Instrumentul _Identifică_**
-    * Executați click pe ![identifica](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/identify.png)
-    * Executați click pe un obiect care aparține layer-ului selectat în *Layers Panels*
-    * Fereastra deschisă prezintă atributele pentru obiectul respectiv.
-2. **Deschiderea tabelului de atribute**
-    * Click dreapta pe layer-ul selectat -> Open Attribute Table
-3. **Selectarea unui obiect din tabel**
-    * Executați click pe numărul rândului din tabel
-    > În mod implicit, in QGIS obiectele selectate sunt simbolizate pe hartă cu culoarea **galbenă**.
-4. **Selectarea unui obiect din hartă**
-    * În *Layers panels* executați click / selectați layer-ul de unde doriți să selectați un obiect;
-    * Executați click pe ![](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/select.png);
-    * Executați click pe un obiect din hartă care se găsește în layer-ul activ din *Layers Panels*
-    * Observați că obiectul selectat are culoarea galbenă. Puteți deschide și tabelul de atribute, iar în căsuța din stânga jos alegeți opțiunea *Show Selected features*
-    > Pentru a selecta mai multe obiecte țineți tasta `shift` apăsată.
-    > Numărul obiectelor selectate apare și în stânga jos, pe **Status Bar**, lângă **Search Bar**.
-5. **Selectarea unui obiect după atribute**
-     1. După o valoare;
-     2. După o expresie;
-6. **Deselectarea obiectelor selectate**
-    * Executați click pe ![deselectare](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/deselect.png)
+
