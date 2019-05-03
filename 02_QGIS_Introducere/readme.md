@@ -22,7 +22,7 @@
 
 ### Cunoașterea interfeței QGIS
 
-![Interfata QGIS](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/qgis_interfata_01.png)
+![Interfata QGIS](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_creare_de_date_interfata.pnge)
 
 1. **Bara de meniu**
 2. **Toolbar**
