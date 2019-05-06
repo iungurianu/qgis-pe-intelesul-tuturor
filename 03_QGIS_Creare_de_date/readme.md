@@ -102,6 +102,7 @@ QGIS vă permite să adaugați o suită mare de basemap-uri în 2 moduri:
  
 2. Prin folosirea de **XYZ Tiles** din Browser
 Pentru a accesa basemap-uri via XYZ Tiles este necesar sa creați o conexiune nouă către link-ul sau URL unde este găzduit serviciul (basemap-ul),să alegeți un nume și să setați un nivel minim și maxim de zoom.
+
 ![xyz](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/03_QGIS_Creare_de_date/Resurse/Img/xyz_conn.png)
 Din fericire există și o variantă mai simplă, chiar dacă aparent pare mai complicată deoarece implică rularea unui script în Python. Scriptul a fost scris de Klas Karlsson și poate fi descărcat de [aici](https://raw.githubusercontent.com/klakar/QGIS_resources/master/collections/Geosupportsystem/python/qgis_basemaps.py)
    Pentru avea acces la basemap-uri este necesar să efectuați pașii următori:
