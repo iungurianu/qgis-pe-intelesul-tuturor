@@ -93,14 +93,16 @@ QGIS vă permite să adaugați o suită mare de basemap-uri în 2 moduri:
 1. Folosind plugin-ul **Quick Map Services**
    1. Pentru instalare alegeți Plugins - Manage and install plugins - în căsuța de căutare scrieți *quick*
    2. Selectați din rezultatele returnate plugin-ul
-   3. Executați click pe **Instal**
+   3. Executați click pe **Install**
    4. Plugin-ul se regăsește în tab-ul **Web** din bara de meniu principal
-   5. Observați că *by deafult* plugin-ul oferă un număr limita de basemap-uri.
+   5. Observați că *by default* plugin-ul oferă un număr limita de basemap-uri.
+![qms](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/03_QGIS_Creare_de_date/Resurse/Img/qgis_qms.png)
    6. Pentru a avea acces la toate basemap-uri: Web - Quick Map Services - Settings - More Services - Get Contributed Pack - Save
    7. Verificați din nou lista de basemap-uri disponibile!
  
 2. Prin folosirea de **XYZ Tiles** din Browser
 Pentru a accesa basemap-uri via XYZ Tiles este necesar sa creați o conexiune nouă către link-ul sau URL unde este găzduit serviciul (basemap-ul),să alegeți un nume și să setați un nivel minim și maxim de zoom.
+![xyz](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/03_QGIS_Creare_de_date/Resurse/Img/xyz_conn.png)
 Din fericire există și o variantă mai simplă, chiar dacă aparent pare mai complicată deoarece implică rularea unui script în Python. Scriptul a fost scris de Klas Karlsson și poate fi descărcat de [aici](https://raw.githubusercontent.com/klakar/QGIS_resources/master/collections/Geosupportsystem/python/qgis_basemaps.py)
    Pentru avea acces la basemap-uri este necesar să efectuați pașii următori:
    1. În interiorul QGIS deschideți consola de Python (fie prin apasarea iconiței din toolbar, fie prin folosirea combinației de taste CTRL+ALT+P);
@@ -108,6 +110,7 @@ Din fericire există și o variantă mai simplă, chiar dacă aparent pare mai c
    3. În fereastra nou deschisă alegeți opțiunea **Open script** și navigați către calea de pe disk unde ați salvat scriptul;
    4. Adaugați scriptul;
    5. Executați click pe **Run script**.
+![python_basemap](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/03_QGIS_Creare_de_date/Resurse/Img/python_console.png)
    
 ## Să explorăm datele vector create   
 
