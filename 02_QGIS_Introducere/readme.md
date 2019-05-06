@@ -72,5 +72,19 @@ Din **QGIS Browser** puteți aduce date folosind următoarele modalități:
 
 
 ## Explorați Sistemele de Coordonate
-1. Observați că în **Status Bar**, în colțul din stânga jos apare **EPSG:4326**. Sistemul de coordonate este modalitatea prin care QGIS transpune în plan suprafața globului. 
+1. Observați că în **Status Bar**, în colțul din stânga jos apare **EPSG:4326**. Sistemul de coordonate este modalitatea prin care QGIS transpune în plan suprafața globului.
+2. Executați click pe **EPSGȘ:4326** pentru a deschide fereastra de opțiuni pentru sisteme de coordonate.
+![qgis_srs](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_srs.png)
+> Aceste opțiuni pot fi accesate și din Meniul principal: Project -> Properties -> Alegeți tabul CRS.
+3. Fereastra vă oferă opțiuni de căutare a sistemelor de coordonate (de obicei după codul EPSG) și de previzualizarea a zonei unde se aplică sistemul de coordonate.
+4. Scrieți în casuța de cautare codul EPSG 3844 corespunzător sistemului de proiecție național. Observați ce se întâmplă în căsuța de previzualizare.
+5. Apăsați OK.
+6. Observați cum este redat layer-ul **Wold Map**.
+> Despe sistemele de coordonate puteți citi mai multe detalii aici: sau puteți viziona aceste clip de pe Youtube. Ambele materiale sunt în limba engleză.
+
 ## Salvați proiectul
+
+1. Pentru a salva proiectul QGIS aveți 3 posibilități:
+  1. Project - Save 
+  2. Folosind combinația de taste CTRL + S
+  3. Folosind iconița dedicată din toolbar.

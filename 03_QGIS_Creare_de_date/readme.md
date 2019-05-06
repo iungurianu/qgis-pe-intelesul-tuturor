@@ -52,6 +52,7 @@
 > După adăugarea a cel puțin 4 puncte, în tablul *GCP table*, în rubrica *Residual(pixels)* sunt trecute erorile de georeferențiere. Încercați să adăugați puncte astfel încât să minimizați valorile erorilor.
 23. La final, în fereastra de *Georeferencer* executați click pe *Transformation Settings*;
 24. La *Transformation type* alegeți **Polynomial 1**, pentru *Resampling method* alegeți **Nearest neighbour**;
+> Puteți citi mai multe informații despre tipurile de transformări [aici](https://docs.qgis.org/testing/en/docs/user_manual/plugins/plugins_georeferencer.html#available-transformation-algorithms)
 25. Pentru *Target SRS*, alegeți **EPSG:3844**
 > Dacă nu îl găsiți în listă, executați click pe butonul *Select CRS*, scrieți la filter *3844* și selectați din listă.
 26. Selectați o locație pe disk pentru noul fișier creat;
@@ -68,7 +69,7 @@
 > De exemplu `exemplu_linie` salvat la adresa: ...`\QGIS_Creare_date\Date\Vector\Outpur\exemplu_linie.shp`;
 3. La *Geometry type* selectați *Line*;
 4. Pentru sistemul de coordonate alegeți *EPSG:3844*;
-5. Dacă doriți să adaugați atribute, puteți completa rubrica *Name* cu numele câmpului, la *Type* să alegeți tipul acestuia și în final să executați click pe *Add to Fields List*;
+5. Dacă doriți să adaugați atribute, puteți completa rubrica *Name* cu numele câmpului, la *Type* să alegeți tipul acestuia (text, integer ...) și în final să executați click pe *Add to Fields List*;
 6. Click OK.
 7. Observați că layer-ul nou creat apare in *Layer Panels*.
 
@@ -81,7 +82,7 @@
 4. Alegeți un nivel de zoom corespunzător;
 > de exemplu 1: 10 000
 4. Începeți să digitizați trasând centrul variantei de ocolire nr. 1!
-> examinați legenda hărții și observați cum este simbolizată varianta de ocolorie nr. 1.
+> examinați legenda hărții și observați cum este simbolizată varianta de ocololire nr. 1.
 5. În momentul în care ați terminat de digitizat executați click dreapta.
 6. În fereastra care se deschide puteți introduce informațiile referitoare la atribute.
 > de exemplu în câmpul *Varianta*, puteți introduce valoarea *1*.
