@@ -88,7 +88,7 @@
 > de exemplu în câmpul *Varianta*, puteți introduce valoarea *1*.
 
 
-#### Adăugarea unei basemap  
+## Adăugarea unei basemap  
 QGIS vă permite să adaugați o suită mare de basemap-uri în 2 moduri:
 1. Folosind plugin-ul **Quick Map Services**
    1. Pentru instalare alegeți Plugins - Manage and install plugins - în căsuța de căutare scrieți *quick*
@@ -100,11 +100,16 @@ QGIS vă permite să adaugați o suită mare de basemap-uri în 2 moduri:
    7. Verificați din nou lista de basemap-uri disponibile!
  
 2. Prin folosirea de **XYZ Tiles** din Browser
-  1. Pentru a accesa basemap-uri via XYZ Tiles este necesar sa creați o conexiune nouă către link-ul sau URL unde este găzduit serviciul (basemap-ul),să alegeți un nume și să setați un nivel minim și maxim de zoom.
-   Din fericire există și o variantă mai simplă, chiar dacă aparent pare mai complicată deoarece implică rularea unui script în Python. Scriptul a fost scris de Klas Karlsson și poate fi descărcat de [aici]()
+Pentru a accesa basemap-uri via XYZ Tiles este necesar sa creați o conexiune nouă către link-ul sau URL unde este găzduit serviciul (basemap-ul),să alegeți un nume și să setați un nivel minim și maxim de zoom.
+Din fericire există și o variantă mai simplă, chiar dacă aparent pare mai complicată deoarece implică rularea unui script în Python. Scriptul a fost scris de Klas Karlsson și poate fi descărcat de [aici](https://raw.githubusercontent.com/klakar/QGIS_resources/master/collections/Geosupportsystem/python/qgis_basemaps.py)
    Pentru avea acces la basemap-uri este necesar să efectuați pașii următori:
-   1. În interiorul QGIS deschideți consola de Python (fie prin apasarea iconiței din toolbar, fie prin folosirea combinației de taste CTRL+ALT+P)
-   2. Din consola de Python executați click pe **Show editor** 
+   1. În interiorul QGIS deschideți consola de Python (fie prin apasarea iconiței din toolbar, fie prin folosirea combinației de taste CTRL+ALT+P);
+   2. Din consola de Python executați click pe **Show editor**;
+   3. În fereastra nou deschisă alegeți opțiunea **Open script** și navigați către calea de pe disk unde ați salvat scriptul;
+   4. Adaugați scriptul;
+   5. Executați click pe **Run script**.
+   
+## Să explorăm datele vector create   
 
 #### Instrumente de explorare a datelor vector
 1. **Instrumentul _Identifică_**
