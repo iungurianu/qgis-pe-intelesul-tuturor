@@ -80,7 +80,7 @@ Din **QGIS Browser** puteți aduce date folosind următoarele modalități:
 4. Scrieți în casuța de cautare codul EPSG:3844 corespunzător sistemului de proiecție național. Observați ce se întâmplă în căsuța de previzualizare.
 5. Apăsați OK.
 6. Observați cum este redat layer-ul **Wold Map**.
-> Despre sistemele de coordonate puteți citi mai multe detalii [aici](https://docs.qgis.org/testing/en/docs/user_manual/working_with_projections/working_with_projections.html) sau puteți viziona acest [clip](https://www.youtube.com/watch?v=0vKNo23i8KI) de pe Youtube. Ambele materiale sunt în limba engleză.
+> Despre sistemele de coordonate puteți citi mai multe detalii [aici](https://docs.qgis.org/testing/en/docs/user_manual/working_with_projections/working_with_projections.html) sau puteți viziona acest [clip](https://www.youtube.com/watch?v=0vKNo23i8KI) de pe Youtube.
 
 ## Salvați proiectul
 
