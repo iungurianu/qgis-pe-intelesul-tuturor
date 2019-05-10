@@ -22,7 +22,9 @@
 
 ### Cunoașterea interfeței QGIS
 
-![Interfata QGIS](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_creare_de_date_interfata.pnge)
+Lansați aplicația QGIS.
+
+![Interfata QGIS](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_creare_de_date_interfata.png)
 
 1. **Bara de meniu**
 2. **Toolbar**
@@ -32,12 +34,15 @@
 6. **Status Bar**
 7. **Search Bar**
 
-#### Adăugarea unui fișier vector
-![Adaugarea unui fisier vector](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/qgis_add_vector_layer.png)
+În **status bar** în casuța de lângă *Coordinate* scrieți **World** și apăsați enter.
+![Coordinate](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_coordinate_world.png)
+În acest moment ați adăugat în QGIS primul dvs. layer, numit **World Map** (observați că layer-ul apare în *Layers Panels*).
+![World_Map](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_world_map.png)
 
-#### Instrumente de navigare pe hartă
+
+## Explorarea instrumentelor de navigare pe hartă
 1. ![pan_map](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/pan.png) - vă permite să navigați pe hartă ținând apăsat butonul stâng al mouse-ului și trăgând în același timp de hartă;
-2. ![pan_map_to_selection](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/pan_map_to_selection.png) - mută harta în locația obiectele selectate fără a schimba nivelul de zoom;
+2. ![pan_map_to_selection](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/pan_map_to_selection.png) - mută harta în locația obiectelor selectate fără a schimba nivelul de zoom;
 3. ![zoom_in](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/zoom.png) - click pentru *zoom in* un nivel, desenați un dreptungi pentru a face zoom pe o suprafață sau folosiți rotița de la mouse;
 4. ![zoom_out](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/zoom_out.png) - funcționează ca și *Zoom in*;
 5. ![zoom_native](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/zoom_to_native.png) - zoom la rezoluția nativă a pixelului
@@ -45,31 +50,41 @@
 7. ![zoom_to_selection](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/zoom_to_selection.png) - zoom la obiectele selectate;
 8. ![zoom_to_layer](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/zoom_to_layer.png) - zoom la extentul maxim al layer-ului selectat in *Layers Panel*
 9. ![zoom_last](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/zoom_last.png) - returnează ultimul nivel de zoom;
-10. ![zoom_next](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/zoom_next.png) - 
+10. ![zoom_next](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/zoom_next.png) - returnează nivel anterior de zoom;
 11. ![new_map_view](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/new_map_view.png) - adaugă o hartă nouă;
 12. ![new_bookmark](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/new_bookmark.png) - adaugă un nou semn pe hartă;
 13. ![show_bookmark](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/show_bookmark.png) - arată toate semnele existente;
 14. ![refresh](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/refresh.png) - redesenează harta.
 
-#### Instrumente de explorare a datelor vector
-1. **Instrumentul _Identifică_**
-    * Executați click pe ![identifica](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/identify.png)
-    * Executați click pe un obiect care aparține layer-ului selectat în *Layers Panels*
-    * Fereastra deschisă prezintă atributele pentru obiectul respectiv.
-2. **Deschiderea tabelului de atribute**
-    * Click dreapta pe layer-ul selectat -> Open Attribute Table
-3. **Selectarea unui obiect din tabel**
-    * Executați click pe numărul rândului din tabel
-    > În mod implicit, in QGIS obiectele selectate sunt simbolizate pe hartă cu culoarea **galbenă**.
-4. **Selectarea unui obiect din hartă**
-    * În *Layers panels* executați click / selectați layer-ul de unde doriți să selectați un obiect;
-    * Executați click pe ![](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/select.png);
-    * Executați click pe un obiect din hartă care se găsește în layer-ul activ din *Layers Panels*
-    * Observați că obiectul selectat are culoarea galbenă. Puteți deschide și tabelul de atribute, iar în căsuța din stânga jos alegeți opțiunea *Show Selected features*
-    > Pentru a selecta mai multe obiecte țineți tasta `shift` apăsată.
-    > Numărul obiectelor selectate apare și în stânga jos, pe **Status Bar**, lângă **Search Bar**.
-5. **Selectarea unui obiect după atribute**
-     1. După o valoare;
-     2. După o expresie;
-6. **Deselectarea obiectelor selectate**
-    * Executați click pe ![deselectare](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_interfata/deselect.png)
+## Activarea și dezactivarea Toolbar-urilor
+Pentru a activa sau dezactiva **Toolbar-urile** în QGIS executați click-dreapta oriunde este un spațiu alb/nefolosit lângă celelalte toolbar-uri.
+
+![Toolbars](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/toolbars.png)
+
+## Familiarizarea cu Browser-ul
+**QGIS Browser** este o structură ierahică care vă permite să navigați către locații de pe calculatorul dvs. direct în QGIS.
+![Browser](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/browser.png)
+
+Din **QGIS Browser** puteți aduce date folosind următoarele modalități:
+* Click-dreapta -> Add selected layer to canvas
+* Dublu-click pe layerul pe care doriți să îl adaugați
+* Drag-n-drop din **QGIS Browser** către **Map Canvas**
+
+
+## Explorați Sistemele de Coordonate
+1. Observați că în **Status Bar**, în colțul din stânga jos apare **EPSG:4326**. Sistemul de coordonate este modalitatea prin care QGIS transpune în plan suprafața globului.
+2. Executați click pe **EPSG:4326** pentru a deschide fereastra de opțiuni pentru sisteme de coordonate.
+![qgis_srs](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/02_QGIS_Introducere/Resurse/Img/qgis_srs.png)
+> Aceste opțiuni pot fi accesate și din Meniul principal: Project -> Properties -> Alegeți tabul CRS.
+3. Fereastra vă oferă opțiuni de căutare a sistemelor de coordonate (de obicei după codul EPSG) și de previzualizarea a zonei unde se aplică sistemul de coordonate.
+4. Scrieți în casuța de cautare codul EPSG:3844 corespunzător sistemului de proiecție național. Observați ce se întâmplă în căsuța de previzualizare.
+5. Apăsați OK.
+6. Observați cum este redat layer-ul **Wold Map**.
+> Despre sistemele de coordonate puteți citi mai multe detalii [aici](https://docs.qgis.org/testing/en/docs/user_manual/working_with_projections/working_with_projections.html) sau puteți viziona acest [clip](https://www.youtube.com/watch?v=0vKNo23i8KI) de pe Youtube.
+
+## Salvați proiectul
+
+1. Pentru a salva proiectul QGIS aveți 3 posibilități:
+  1. Project - Save 
+  2. Folosind combinația de taste CTRL + S
+  3. Folosind iconița dedicată din toolbar.
