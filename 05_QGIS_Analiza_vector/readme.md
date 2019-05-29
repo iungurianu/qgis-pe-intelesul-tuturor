@@ -25,4 +25,10 @@
 10. Click OK.
 11. Click OK pentru a închide fereastra de Layer Properties.
 12. Deschideți din nou tabelul de atribute pentru fișierul **tm_clc2018.shp** și observați apariția câmpului nou **j_descriere**
-> Join-ul nu este permanent. Este o operațiune activă atâta timp cât proiectul QGIS este deschis. Pentru face stratul permanentul executați click dreapta -> Export -> Save features as
+> Join-ul nu este permanent. Este o operațiune activă atâta timp cât proiectul QGIS este deschis. Pentru a face stratul permanentul executați click dreapta -> Export -> Save features as
+13. În aceste moment, folosindu-ne de câmpul **J_descriere** putem selecta din **tm_clc2018.shp** terenurile arabile
+14. Având tabelul de atribute deschis pentru **tm_clc2018.shp** executați click pe **Select by expression**
+15. În fereastra nou deschisă scrieți următoarea expresie:
+```
+ "j_descriere" in ( ' Land principally occupied by agriculture with significant areas of natural vegetation' , 'Non irigated arable land' )
+```
