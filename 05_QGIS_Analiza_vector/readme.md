@@ -10,7 +10,7 @@
 
 
 ## Let's jump right in
-
+### Pregătirea datelor
 1.Deschideți QGIS
 2.Folosind Browser-ul navigați către locația de pe disk unde ați salvat datele.
 3.Adaugați în QGIS **tm_clc2018.shp**
@@ -32,3 +32,29 @@
 ```sql
  "j_descriere" in ( ' Land principally occupied by agriculture with significant areas of natural vegetation' , 'Non irigated arable land' )
 ```
+16. Executați click pe butonul **Select features**
+17. Observați că obiectele selectate apar cu culoare albastră în tabelul de atribute și cu galben pe hartă.
+18. Acum putem exporta terenul arabil. Click dreapta pe **tm_clc2018.shp** -> Export -> Save Selected Features as
+19. La File Name navigați către folderul dvs. de date, creați un subfolder numit Solutie_Workshop și dați un nume fișierului nou, de exemplu *tm_teren_arabil*
+20. De asemenea este o ocazie foarte bună să reproiectăm fișierul în sistemul național de proiecție. La CRS alegeți Stereo 70 - EPSG 3844
+21. Click ok
+22. Observați că layer-ul nou creat apare in QGIS, în panelul de straturi. Pentru moment putem să îl debifăm.
+23. Selectatți stratul **tm_clc2018**, deschideți tabelul de atribute, dacă l-ați închis și deselectați obiectele selectate.
+24. În continuare vom repeta pașii de mai sus pentru selectarea intravilanelor, folosind de această dată următoarea expresie:
+```sql
+ "j_descriere" in ( ' Discontinuous urban fabric' , ' Industrial or commercial units' )
+```
+25. Salvați obiectele selectate în subfolderul Soluție_Workshop cu denumirea **intravilan.shp**
+> Nu uitați să reproiectați layer-ul!
+
+### Realizarea analizei
+
+1. Fabrica trebuie să fie la **500 m** față de intravilan. Putem obține acest lucru aplicând un **buffer** fișierului **intravilan.shp**
+2. Mergeți în **Processing Toolbox** și scrieți în căsuța de căutare **buffer**
+> Dacă nu aveți panoul de Processing Toolbox activ, apăsați pe iconița care seamănă cu o rotiță, din bara de instrumente.
+3. Alegeți prima opțiune executând dublu click.
+4. În fereastra nou deschisă, la **Input layer** alegeți **intravilan.shp**, la **Distance** - 500m, iar la **Buffered**, navigați către ...\Soluție_Workshop și denumiți fișierul creat **intravilan_500m**
+5. Repetați procesul si pentru liniile de înaltă tensiune și drumuri, adaptând parametrul distanță conform criteriilor.
+6. La final, observați că QGIS denumește automat fișierele după numele algoritmului folosit. Puteți să le selectați și sa le eliminați din panoul de straturi. 
+7. Mergeți în QGIS Browser, acționați butonul de refresh și navigați către ...\Soluție_Workshop. Observați straturile create. Selectați-le și adaugați-le în QGIS.
+8. Ordonați-le în panoul de straturi astfel încăt să fie vizibile toate (de exemplu drumurile să fie peste terenurile arabile).
