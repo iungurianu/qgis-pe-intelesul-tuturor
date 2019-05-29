@@ -29,6 +29,6 @@
 13. În aceste moment, folosindu-ne de câmpul **J_descriere** putem selecta din **tm_clc2018.shp** terenurile arabile
 14. Având tabelul de atribute deschis pentru **tm_clc2018.shp** executați click pe **Select by expression**
 15. În fereastra nou deschisă scrieți următoarea expresie:
-```
+```sql
  "j_descriere" in ( ' Land principally occupied by agriculture with significant areas of natural vegetation' , 'Non irigated arable land' )
 ```
