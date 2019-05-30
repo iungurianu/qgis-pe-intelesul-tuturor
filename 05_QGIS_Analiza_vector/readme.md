@@ -10,6 +10,7 @@
  * Să fie la 500 m de localități (intravilan)
  * Să fie la 5000 m de liniile de înaltă tensiune
  * Să fie la 500 m de drumuri
+ * Să fie construită pe un teren cu o suprafață mai mare de 10 ha.
 
 
 ## Let's jump right in
@@ -18,7 +19,6 @@
 2. Folosind Browser-ul navigați către locația de pe disk unde ați salvat datele.
 3. Adaugați în QGIS **tm_clc2018.shp**
 > *clc* este o prescurtare de la Corine Land Cover și reprezintă un set de date cu modul de utilizare al terenului la nivelul UE. Mai multe detalii găsiți [aici](https://land.copernicus.eu/pan-european/corine-land-cover)
-
 4. Deschideți tabelul de atribute pentru stratul **tm_clc2018.shp**. Observați că informațiile din tabelul de atribute nu ne ajută să identificăm ușor terenurile arabile, de exemplu. Ce mod de utilizare au obiectele reprezentate cu codul 111?. Așadar avem nevoie de informații suplimentare. Pentru a le obține vom realiza un **join**! 
 5. Din folderul cu date aduceți în QGIS fișierul **clc_descriere.csv** 
 6. Deschideți tabelul de atribute și observați că și acest fișier conține câmpul **code_18**, dar și câmpul **descriere** care oferă explicații despre fiecare cod în parte. Vom folosi câmpul **code_18** pentru a face legătura cu fișierul **tm_clc2018.shp** 
