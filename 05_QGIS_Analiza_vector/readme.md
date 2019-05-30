@@ -2,6 +2,9 @@
 
  Găsirea celei mai optime locații pentru o fabrică!
  
+ ### Cum ar trebui să arate rezultatul?
+ ![locatii_fabrica](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/05_QGIS_Analiza_vector/Data/Workshop/locatii.png)
+ 
  #### Criterii:
  * Să fie pe teren arabil;
  * Să fie la 500 m de localități (intravilan)
@@ -26,7 +29,7 @@
 11. Click OK pentru a închide fereastra de Layer Properties.
 12. Deschideți din nou tabelul de atribute pentru fișierul **tm_clc2018.shp** și observați apariția câmpului nou **j_descriere**
 > Join-ul nu este permanent. Este o operațiune activă atâta timp cât proiectul QGIS este deschis. Pentru a face stratul permanentul executați click dreapta -> Export -> Save features as
-13. În aceste moment, folosindu-ne de câmpul **J_descriere** putem selecta din **tm_clc2018.shp** terenurile arabile
+13. În acest moment, folosindu-ne de câmpul **J_descriere** putem selecta din **tm_clc2018.shp** terenurile arabile
 14. Având tabelul de atribute deschis pentru **tm_clc2018.shp** executați click pe **Select by expression**
 15. În fereastra nou deschisă scrieți următoarea expresie:
 ```sql
