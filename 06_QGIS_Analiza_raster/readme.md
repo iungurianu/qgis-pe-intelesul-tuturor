@@ -53,15 +53,15 @@ Având în vedere ca peste zona noastră de interes se suprapun 2 imagini raster
 7. Click pe Run.
 8. Rasterul virtual apare în panelul de straturi cu denumirea **Virtual**
 9. Asigurați-vă că în acest moment aveți încărcate în QGIS, în panoul de straturi, doar rasterul **Virtual** și fișierul **limita_retezat.shp**. Dacă aveți straturi în plus le puteți elimina pentru a păstra un mediu de lucru ordonat.
-10. Ordonați cele doua straturi astfel încât **limita_retezat.shp** să fie deasupra rasterul **Virtual**
+10. Ordonați cele doua straturi astfel încât **limita_retezat.shp** să fie deasupra rasterului **Virtual**
 11. Observați că rasterul acoperă o zonă mult mai mare așadar este necesar să-l decupăm după zona noastră de interes.
 12. În **Processing Toolbox** căutați algoritmul **Clip Raster by Mask Layer**
 13. La **Input layer** alegeți rasterul **Virtual**, la **Mask layer** ar trebui să fie deja completat în mod implicit **limita_retezat**
-14. Este OK să salvați fișierul decupa ca și fișier temporar
+14. Este OK să salvați fișierul decupat ca și fișier temporar
 15. Click Run
 16. Rasterul decupat apare în panelul de straturi cu denumirea **Clipped (mask)**
 17. Debifați sau eliminați din panelul de straturi rasterul **Virtual** și aranjați straturile astfel încât **limita_retezat** să fie peste **Clipped (mask)**
-18. În panelul de straturi selectați **limita_retezat**, executați click dreapta -> Properties -> Symvbology -> Simple Fill. **Fill style** selectați **No Brush**, iar la **Stroke color** alegeți o altă culoare, de exemplu roșu.
+18. În panelul de straturi selectați **limita_retezat**, executați click dreapta -> Properties -> Symvbology -> Simple Fill. La **Fill style** selectați **No Brush**, iar la **Stroke color** alegeți o altă culoare, de exemplu roșu.
 19. Observați suprapunerea dintre rasterul decupat și limita Parcului Național Retezat
 20. Să salvăm și să reproiectăm rasterul **Clipped (mask)**. Selectați-l în panelul de straturi, click dreapta -> Export -> Save as. La format lăsăți **GeoTIFF**, la File name alegeți un nume, de exemplu *srtm_retezat* și o locație unde să îl salvați pe disk. La CRS alegeți EPSG:3844.
 21. Click OK.
