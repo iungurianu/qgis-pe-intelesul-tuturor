@@ -9,7 +9,7 @@
 3. Orientarea să fie NV, N și NE (0-70 grade și 290-360 grade);
 4. Zona nu trebuie să se suprapună cu zonele deja împădurite :)
 
-### Cum ar trebui să arate rezultatul final
+### Cum ar trebui să arate rezultatul?
 ![analiza_raster](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/06_QGIS_Analiza_raster/Resurse/Img/solutie_analiza_raster.png)
 ### Obiective
  * Download SRTM direct în QGIS folosind plugin-ul **SRTM Downloader**
@@ -69,7 +69,18 @@ Având în vedere ca peste zona noastră de interes se suprapun 2 imagini raster
 21. Click OK.
 
 ### Vizualizarea rasterului cu o paletă de culori potrivită altitudinii
-1. Select
+1. Selectați **srtm_retezat** și deschideți **Panoul de Layer Styling** fie prin apăsarea tastei F7 (utilizatori de Windows)
+2. Selectați opțiunea **Singleband pseudocolor**
+3. Extindeți opțiunile pentru Min Max Value
+4. La **Accuracy** alegeți Actual (slower)
+5. La **Color ramp** selectați **Create New Color Ramp**
+6. Selectați **Catalog cpt-city**
+7. Click OK
+8. Selectați din lista **Topography**
+9. Alegeți paleta de culori **sd-a**
+10. Click OK
+
+
  
   ### Realizarea analizei
   #### Criteriul 1 - Altitudinea trebuie să fie între 1200 - 1600 m;
