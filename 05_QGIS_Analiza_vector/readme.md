@@ -18,6 +18,7 @@
 2.Folosind Browser-ul navigați către locația de pe disk unde ați salvat datele.
 3.Adaugați în QGIS **tm_clc2018.shp**
 > clc este o prescurtare de la Corine Land Cover. Mai multe detalii găsiți [aici](https://land.copernicus.eu/pan-european/corine-land-cover)
+
 4.Deschideți tabelul de atribute pentru stratul **tm_clc2018.shp**. Observați ca informațiile din tabelul de atribute nu ne ajută să identificăm terenurile arabile sau intravilanele, în forma asta. Vom face un **join**!
 5.Din folderul cu date aduceți în QGIS fișierul **clc_descriere.csv**
 6.Deschideți tabelul de atribute și observați că și acest fișier conține câmpul **code_18**. Vom folosi acest camp pentru a face legătura cu fișierul **tm_clc2018.shp**
