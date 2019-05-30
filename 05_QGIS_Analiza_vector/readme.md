@@ -17,11 +17,11 @@
 1. Deschideți QGIS
 2. Folosind Browser-ul navigați către locația de pe disk unde ați salvat datele.
 3. Adaugați în QGIS **tm_clc2018.shp**
-> clc este o prescurtare de la Corine Land Cover. Mai multe detalii găsiți [aici](https://land.copernicus.eu/pan-european/corine-land-cover)
+> *clc* este o prescurtare de la Corine Land Cover și reprezintă un set de date cu modul de utilizare al terenului la nivelul UE. Mai multe detalii găsiți [aici](https://land.copernicus.eu/pan-european/corine-land-cover)
 
-4. Deschideți tabelul de atribute pentru stratul **tm_clc2018.shp**. Observați ca informațiile din tabelul de atribute nu ne ajută să identificăm terenurile arabile sau intravilanele, în forma asta. Vom face un **join**! 
+4. Deschideți tabelul de atribute pentru stratul **tm_clc2018.shp**. Observați că informațiile din tabelul de atribute nu ne ajută să identificăm ușor terenurile arabile, de exemplu. Ce mod de utilizare au obiectele reprezentate cu codul 111?. Așadar avem nevoie de informații suplimentare. Pentru a le obține vom realiza un **join**! 
 5. Din folderul cu date aduceți în QGIS fișierul **clc_descriere.csv** 
-6. Deschideți tabelul de atribute și observați că și acest fișier conține câmpul **code_18**. Vom folosi acest camp pentru a face legătura cu fișierul **tm_clc2018.shp** 
+6. Deschideți tabelul de atribute și observați că și acest fișier conține câmpul **code_18**, dar și câmpul **descriere** care oferă explicații despre fiecare cod în parte. Vom folosi câmpul **code_18** pentru a face legătura cu fișierul **tm_clc2018.shp** 
 7. În panelul de straturi, executați click dreapta pe **tm_clc2018.shp** -> Properties -> Alegeți tab-ul Joins -> Executați click pe plus (Add new join). La join layer alegeți **clc_descriere**, la join field și target field alegeți **code_18**
 8. Bifați căsuța din dreptul **Joined Fields** și alegeți/bifați **descriere**
 9. Bifați căsuta din dreptul **Custom Field Name Prefix**, și înlocuiți *clc_descriere_* cu **j_**
@@ -43,7 +43,7 @@
 20. De asemenea este o ocazie foarte bună să reproiectăm fișierul în sistemul național de proiecție. La CRS alegeți Stereo 70 - EPSG 3844
 21. Click ok
 22. Observați că layer-ul nou creat apare in QGIS, în panelul de straturi. Pentru moment putem să îl debifăm.
-23. Selectatți stratul **tm_clc2018**, deschideți tabelul de atribute, dacă l-ați închis și deselectați obiectele selectate.
+23. Selectați stratul **tm_clc2018**, deschideți tabelul de atribute, dacă l-ați închis și deselectați obiectele selectate.
 24. În continuare vom repeta pașii de mai sus pentru selectarea intravilanelor, folosind de această dată următoarea expresie:
 ```sql
  "j_descriere" in ( ' Discontinuous urban fabric' , ' Industrial or commercial units' )
@@ -53,10 +53,16 @@
 
 ### Realizarea analizei
 
+Având toate datele pregătite putem începe procesul de analiză folosind tehnici/algoritmi specifici mediului GIS.
+În QGIS puteți avea acces rapid la toți algoritmii folosind:
+* **Processing Toolbox** 
+ * Pentru a activa Processing Toolbox executați click pe iconița care seamănă cu o rotiță, din bara de instrumente sau folosiți combinația de taste **CTRL+ALT+T**. După click, panelul cu instrumentele de procesare va fi adăugat/andocat în partea dreaptă a interfeței QGIS.
+ * Observați că algoritimii sunt grupați pe categorii sortate în mod alfabetic.
+* Accesând din bara de meniu principală, opțiunea vector sau opțiunea raster, în funcție de tipul datelor de intrare pentru care doriți să realizați o analiză/procesare.
+* Folosind **Bara de căutare** localizată în partea din stânga jos a interfeței QGIS. Alegerea acestei metode presupune să cunoașteți în prealabil denumirea algoritmilor pe care doriți să ii accesați!
+
 1. Fabrica trebuie să fie la **500 m** față de intravilan. Putem obține acest lucru aplicând un **buffer** fișierului **intravilan.shp**
 2. Mergeți în **Processing Toolbox** și scrieți în căsuța de căutare **buffer**
-> Dacă nu aveți panoul de Processing Toolbox activ, apăsați pe iconița care seamănă cu o rotiță, din bara de instrumente.
-> O altă opțiune este să folosiți bara de căutare din stânga jos!
 3. Alegeți prima opțiune executând dublu click.
 4. În fereastra nou deschisă, la **Input layer** alegeți **intravilan.shp**, la **Distance** - 500m, bifați opțiunea **Dissolve result** iar la **Buffered**, alegeți **Save to file** și navigați către ...\Soluție_Workshop și denumiți fișierul creat **intravilan_500m**
 5. Repetați procesul si pentru liniile de înaltă tensiune și drumuri, adaptând parametrul distanță conform criteriilor.
@@ -83,4 +89,6 @@ $area/10000
 19. Cu tabelul de atribute deschis și cu editarea pornită ștergeți obiectele selectate
 20. Opriți editarea și salvați modificările făcute.
 
-### Felicitări! Ați experimentat cu succes folosirea tehnicilor GIS în găsirea celor mai optime locații pentru o fabrică!
+Pentru a crea un context puteți să suprapuneți locațiile rezultate peste un basemap, de exemplu Open Street Map, folosind plugin-ul Quick Map Services!
+
+**Ați finalizat cu succes sesiunea de Analiză Vector** :+1:. 
