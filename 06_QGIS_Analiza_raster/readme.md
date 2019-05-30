@@ -123,6 +123,25 @@ Având în vedere ca peste zona noastră de interes se suprapun 2 imagini raster
   ```
  "orientare_reclasificat@1" + "pante_reclasificat@1" + "altitudine_reclasificat"
   ```
-  3. Observați că în panelul de straturi apare un raster nou cu valori de la 0 la 3, unde 3 reprezintă zonele care satisfac cele 3 criterii de mai sus.
+  3. La output layer alegeți calea unde să salvați rasterul nou creat și numele, de exemplu raster_retezat. 
+  4. Observați că în panelul de straturi apare un raster nou cu valori de la 0 la 3, unde 3 reprezintă zonele care satisfac cele 3 criterii de mai sus.
   
   #### Criteriul 4 - 3. Zona nu trebuie să se suprapună cu zonele deja împădurite :);
+  1. În bara de meniu principală mergeți la Raster -> Conversion -> Polygonize
+  2. La **Input layer** alegeți **raster_retezat**
+  3. Click Run!
+  4. Un nou strat, denumit **Vectorized** apare în panelul de straturi
+  5. Click dreapta pe **Vectorized**, deschideți tabelul de atribute și executați click pe **Select by expression**
+  6. Tastați următoarea expresie:
+  ```sql
+   "DN" in ( 0,1,2)
+  ```
+  7. Click pe **Select features** 
+  8. Click pe **Close**
+  9. Porniți editarea și ștergeți obiectele selectate
+  10. Salvați
+  11. Adaugați în QGIS fișierul shapefile **clc2018_padure**
+  12. În **Processing Toolbox** căutați algoritmul **Difference**
+  13. La **Input Layer** alegeți ..., iar la **Overlay Layer** alegeți
+  14.
+  
