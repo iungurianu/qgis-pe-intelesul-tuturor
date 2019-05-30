@@ -9,6 +9,8 @@
 3. Orientarea să fie NV, N și NE (0-70 grade și 290-360 grade);
 4. Zona nu trebuie să se suprapună cu zonele deja împădurite :)
 
+### Cum ar trebui să arate rezultatul final
+![analiza_raster](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/06_QGIS_Analiza_raster/Resurse/Img/solutie_analiza_raster.png)
 ### Obiective
  * Download SRTM direct în QGIS folosind plugin-ul **SRTM Downloader**
  > SRTM este o prescurtare de la **Shuttle Radar Topography Mission**. Puteți citi mai multe detalii [aici](https://en.wikipedia.org/wiki/Shuttle_Radar_Topography_Mission)
