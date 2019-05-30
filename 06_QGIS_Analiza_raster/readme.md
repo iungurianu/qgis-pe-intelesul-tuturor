@@ -140,8 +140,15 @@ Având în vedere ca peste zona noastră de interes se suprapun 2 imagini raster
   8. Click pe **Close**
   9. Porniți editarea și ștergeți obiectele selectate
   10. Salvați
-  11. Adaugați în QGIS fișierul shapefile **clc2018_padure**
-  12. În **Processing Toolbox** căutați algoritmul **Difference**
-  13. La **Input Layer** alegeți ..., iar la **Overlay Layer** alegeți
-  14.
+  11. În **Processing Toolbox** căutați algoritmul **Fix Geometries**
+  12. La **Input layer** alegeți **Vectorized**
+  13. Click Run
+  14. Adaugați în QGIS fișierul shapefile **clc2018_padure**
+  15. În **Processing Toolbox** căutați algoritmul **Difference**
+  16. La **Input Layer** alegeți **Fixed Geometries**, iar la **Overlay Layer** alegeți **clc2018_padure**
+  14. La **Difference** alegeți o locație și un nume pentru fișierul rezultat, de exemplu solutia_finala
+  15. Click Run!
+  16. În acest moment aveți încărcat în QGIS un strat cu zonele care satisfac cele 4 criterii!
+  
+  **Ați finalizat cu succes sesiunea de Analiză Raster** :+1:. 
   
