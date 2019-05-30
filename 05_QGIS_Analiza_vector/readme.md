@@ -1,10 +1,7 @@
 # Scenariu
 
  Găsirea celei mai optime locații pentru o fabrică!
- 
- ### Cum ar trebui să arate rezultatul?
- ![locatii_fabrica](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/05_QGIS_Analiza_vector/Data/Workshop/locatii.png)
- 
+
  #### Criterii:
  * Să fie pe teren arabil;
  * Să fie la 500 m de localități (intravilan)
@@ -12,6 +9,8 @@
  * Să nu fie la o distanță mai mare de 500 m de drumuri
  * Să fie construită pe un teren cu o suprafață mai mare de 10 ha.
 
+ ### Cum ar trebui să arate rezultatul?
+ ![locatii_fabrica](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/05_QGIS_Analiza_vector/Data/Workshop/locatii.png)
 
 ## Let's jump right in
 ### Pregătirea datelor
