@@ -61,14 +61,68 @@ Având în vedere ca peste zona noastră de interes se suprapun 2 imagini raster
 15. Click Run
 16. Rasterul decupat apare în panelul de straturi cu denumirea **Clipped (mask)**
 17. Debifați sau eliminați din panelul de straturi rasterul **Virtual** și aranjați straturile astfel încât **limita_retezat** să fie peste **Clipped (mask)**
-18. În panelul de straturi selectați **limita_retezat**, executați click dreapta -> Properties -> Symvbology -> Simple Fill. La **Fill style** selectați **No Brush**, iar la **Stroke color** alegeți o altă culoare, de exemplu roșu.
+18. În panelul de straturi selectați **limita_retezat**, executați click dreapta -> Properties -> Symbology -> Simple Fill. La **Fill style** selectați **No Brush**, iar la **Stroke color** alegeți o altă culoare, de exemplu roșu.
 19. Observați suprapunerea dintre rasterul decupat și limita Parcului Național Retezat
 20. Să salvăm și să reproiectăm rasterul **Clipped (mask)**. Selectați-l în panelul de straturi, click dreapta -> Export -> Save as. La format lăsăți **GeoTIFF**, la File name alegeți un nume, de exemplu *srtm_retezat* și o locație unde să îl salvați pe disk. La CRS alegeți EPSG:3844.
 21. Click OK.
+
+### Vizualizarea rasterului cu o paletă de culori potrivită altitudinii
+1. Select
  
   ### Realizarea analizei
+  #### Criteriul 1 - Altitudinea trebuie să fie între 1200 - 1600 m;
+  
+  1. Pentru a îndeplini acest criteriu avem nevoie doar de rasterul **srtm_retezat**. Asigurați-vă că îl aveți încărcat în panelul de straturi și eliminați restul de straturi dacă este cazul pentru a menține un mediu de lucru ordonat.
+  2. În bara de meniu principală accesați Raster -> Raster Calculator
+  > Raster Calculator vă oferă posibilitatea să efectuați operațiuni matematice cu rastere
+  > Fiecare pixel al raster-lui **srtm_retezat** conține informații despre altitudine
+  3. În rubrica **Raster Bands** vor apărea toate rasterele încărcate în QGIS, în cazul de față ar trebui să aveți **srtm_retezat**
+  4. În rubrica **Raster Calculator Expression** scrieți următoarea expresie:
+  ```
+  ("srtm_retezat@1">=1200 and "srtm_retezat@1"<=1600)*1 + ("srtm_retezat@1"<1200 and "srtm_retezat@1">1600)*0
+  ```
+  > Să explicăm pe scurt expresia. Practic toate valorile pixelilor care sunt in intervalul 1200-1600 (interval care satisface primul criteriu) vor avea valoarea 1, în timp ce pixelii cu valori <1200 și peste 1600 vor avea valoarea 0
+  
+  5. La output layer alegeți calea unde să salvați rasterul nou creat și numele, de exemplu altitudine_reclasificat.
+  6. Observați că rasterul apare în panelul de straturi având doar două valori, 0 și 1
+  
+  #### Criteriul 2 - Panta trebuie să fie între 10 și 50 de grade;
+  
+  1. Pentru a calcula panta avem nevoie de rasterul **srtm_retezat**
+  2. În bara de meniu principală mergeți la Raster -> Analysis -> Slope
+  3. La **Input layer** alegeți **srtm_retezat**
+  4. Întrucât rasterul obținut va trebui reclasificat putem să îl salvam ca și fișier temporar. Click run!
+  5. În panelul de straturi apare un raster nou, numit **Slope**
+  6. Din bara de meniu principală mergeți la Raster-> Raster Calculator
+  7. În rubrica **Raster Calculator Expression** scrieți următoarea expresie:
+  ```
+  ("Slope@1">=10 and "Slope@1"<=50)*1+("Slope@1"<10 and "Slope@1">50)*0
+  ```
+  8. La output layer alegeți calea unde să salvați rasterul nou creat și numele, de exemplu pante_reclasificat.
  
-
+ #### Criteriul 3 - 3. Orientarea să fie NV, N și NE (0-70 grade și 290-360 grade);
+ 1. În bara de meniu principală mergeți la Raster -> Analysis -> Aspect
+ 2. La **Input layer** alegeți **srtm_retezat**
+ 3. Întrucât rasterul obținut va trebui reclasificat putem să îl salvam ca și fișier temporar. Click run!
+ 4. În panelul de straturi apare un raster nou, numit **Aspect**
+ 5. În **Processing Toolbox** căutați algoritmul **Reclassify by table**
+ 6. La **Raster Layer** alegeți **Aspect**
+ 7. La **Reclassification table**, executați click pe butonul Elipsă
+ 8. În fereastra nou deschisă, executați click pe butonul Add Row
+ 9. În căsuțele create, la **Minimum** scrieți 0, la **Maximum** scrieți 70, iar la **Value** scrieți 1
+ 10. Click din nou pe butonul de **Add row**
+ 11. Pe rândul nou creat, scrieți la **Minimum** scrieți 70, la **Maximum** scrieți 290, iar la **Value** scrieți 0
+ 12. Click din nou pe butonul de **Add row**
+ 13. Pe rândul nou creat, scrieți la **Minimum** scrieți 290, la **Maximum** scrieți 360, iar la **Value** scrieți 1
+ 14. Click OK.
+ 15. Alegeți calea unde doriți să salvați rasterul reclasificat și denumiți-l orientare_reclasificat.
  
- 
-    
+ ##### În acest moment putem să adunăm cele 3 rastere
+ 1. Raster-> Raster Calculator
+ 2. În rubrica **Raster Calculator Expression** scrieți următoarea expresie:
+  ```
+ "orientare_reclasificat@1" + "pante_reclasificat@1" + "altitudine_reclasificat"
+  ```
+  3. Observați că în panelul de straturi apare un raster nou cu valori de la 0 la 3, unde 3 reprezintă zonele care satisfac cele 3 criterii de mai sus.
+  
+  #### Criteriul 4 - 3. Zona nu trebuie să se suprapună cu zonele deja împădurite :);
