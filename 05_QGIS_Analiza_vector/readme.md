@@ -43,7 +43,8 @@
 14. Având tabelul de atribute deschis pentru **tm_clc2018.shp** executați click pe **Select by expression**
 15. În fereastra nou deschisă scrieți următoarea expresie:
 ```sql
- "j_descriere" in ( ' Land principally occupied by agriculture with significant areas of natural vegetation' , 'Non irigated arable land' )
+ "j_descriere" in ( ' Land principally occupied by agriculture with significant areas of natural vegetation' ,
+ 'Non irigated arable land' )
 ```
 16. Executați click pe butonul **Select features**
 17. Observați că obiectele selectate apar cu culoare albastră în tabelul de atribute și cu galben pe hartă.
