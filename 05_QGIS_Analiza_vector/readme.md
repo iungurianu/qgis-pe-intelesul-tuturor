@@ -11,6 +11,16 @@
 
  ### Cum ar trebui să arate rezultatul?
  ![locatii_fabrica](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/05_QGIS_Analiza_vector/Data/Workshop/locatii.png)
+ 
+ ### Obiective
+ 
+ 1. Inspectarea datelor vector
+ 2. Normalizarea datelor vector
+    1. Join
+    2. Filtrare
+    3. Selectare
+    4. Reproiectare
+ 3. Realizarea unor operațiuni GIS de nivel începător specifice datelor de tip vector
 
 ## Let's jump right in
 ### Pregătirea datelor
