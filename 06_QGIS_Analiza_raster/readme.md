@@ -50,12 +50,12 @@ Având în vedere ca peste zona noastră de interes se suprapun 2 imagini raster
 2. În fereastra deschisă alegeți la **Input Layers**, executând click pe butonul ... cele două imagini raster descărcate
 3. La Resolution lăsați **average**
 4. Debifați opțiunea **Place each input file into a separate band**
-5. La Resampling alegeși **Bilinear**
+5. La Resampling alegeți **Bilinear**
 6. Puteți salva raster-ul ca și fișier temporar
 7. Click pe Run.
 8. Rasterul virtual apare în panelul de straturi cu denumirea **Virtual**
 9. Asigurați-vă că în acest moment aveți încărcate în QGIS, în panoul de straturi, doar rasterul **Virtual** și fișierul **limita_retezat.shp**. Dacă aveți straturi în plus le puteți elimina pentru a păstra un mediu de lucru ordonat.
-10. Ordonați cele doua straturi astfel încât **limita_retezat.shp** să fie deasupra rasterului **Virtual**
+10. Ordonați cele două straturi astfel încât **limita_retezat.shp** să fie deasupra rasterului **Virtual**
 11. Observați că rasterul acoperă o zonă mult mai mare așadar este necesar să-l decupăm după zona noastră de interes.
 12. În **Processing Toolbox** căutați algoritmul **Clip Raster by Mask Layer**
 13. La **Input layer** alegeți rasterul **Virtual**, la **Mask layer** ar trebui să fie deja completat în mod implicit **limita_retezat**
