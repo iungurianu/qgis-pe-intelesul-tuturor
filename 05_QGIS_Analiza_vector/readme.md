@@ -11,6 +11,16 @@
 
  ### Cum ar trebui să arate rezultatul?
  ![locatii_fabrica](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/05_QGIS_Analiza_vector/Data/Workshop/locatii.png)
+ 
+ ### Obiective
+ 
+ 1. Inspectarea datelor vector
+ 2. Normalizarea datelor vector
+    1. Join
+    2. Filtrare
+    3. Selectare
+    4. Reproiectare
+ 3. Realizarea unor operațiuni GIS de nivel începător specifice datelor de tip vector
 
 ## Let's jump right in
 ### Pregătirea datelor
@@ -33,7 +43,8 @@
 14. Având tabelul de atribute deschis pentru **tm_clc2018.shp** executați click pe **Select by expression**
 15. În fereastra nou deschisă scrieți următoarea expresie:
 ```sql
- "j_descriere" in ( ' Land principally occupied by agriculture with significant areas of natural vegetation' , 'Non irigated arable land' )
+ "j_descriere" in ( ' Land principally occupied by agriculture with significant areas of natural vegetation' ,
+ 'Non irigated arable land' )
 ```
 16. Executați click pe butonul **Select features**
 17. Observați că obiectele selectate apar cu culoare albastră în tabelul de atribute și cu galben pe hartă.
