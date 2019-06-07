@@ -1,0 +1,8 @@
+1. Cutremure
+https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1
+
+2. Vector / raster data
+https://www.naturalearthdata.com/downloads/
+
+3. Anti-shipping Activiti Messages
+https://msi.nga.mil/NGAPortal/MSI.portal?_nfpb=true&_pageLabel=msi_portal_page_65
