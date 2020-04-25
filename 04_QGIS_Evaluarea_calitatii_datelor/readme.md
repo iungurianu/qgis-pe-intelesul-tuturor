@@ -1,4 +1,6 @@
+
 ![logo](https://github.com/iungurianu/qgis-pe-intelesul-tuturor/blob/master/04_QGIS_Verificare_si_validare_topologii/verificare_topologii_logo.png)
+Laborator preluat de la [Geoacademy](http://spatialquerylab.com/foss4g-academy-curriculum/)
 ## Scenariu
 **Lucrați ca analist GIS pentru orașul Albuquerque, New Mexico, iar sarcina dvs. este să verificați și să validați un set de date înainte de a fi publicat pe geo-portalul orașului.**
 
